@@ -18,4 +18,8 @@ public interface StudentService {
     int save(Student student);
 
     int saveByList(List<Student> list);
+
+    int queryCountByCondition(Map map);
+
+    Map<String,Object> queryStudentAndCourses(Long id);
 }

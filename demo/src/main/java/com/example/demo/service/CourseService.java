@@ -1,7 +1,6 @@
 package com.example.demo.service;
 
 import com.example.demo.pojo.Course;
-import com.example.demo.pojo.Student;
 
 import java.util.List;
 import java.util.Map;
@@ -19,4 +18,6 @@ public interface CourseService {
     int save(Course course);
 
     int saveByList(List<Course> list);
+
+    int queryCountByCondition(Map map);
 }
